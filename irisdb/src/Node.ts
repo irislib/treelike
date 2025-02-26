@@ -215,7 +215,12 @@ export class Node {
   private notifyChange(value: JsonValue, updatedAt?: number) {
     this.onSubscriptions.forEach(({ callback, recursion }) => {
       if (recursion > 0 && isDirectory(value)) return;
-      callback(value, this.id, updatedAt, () => {});
+      callback(
+        value && typeof value === 'object' ? { ...value } : value, // clone the value if it's an object
+        this.id,
+        updatedAt,
+        () => {},
+      );
     });
     // Notify forEachSubscriptions similarly if needed.
   }
