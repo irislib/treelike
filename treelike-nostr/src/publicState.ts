@@ -1,5 +1,4 @@
-import { Adapters, Node } from 'treelike';
-
+import { Adapters, Node } from '../../treelike/src';
 import { PublicKey } from './Hex/PublicKey.ts';
 import NDKAdapter from './NDKAdapter';
 import { NostrPublish, NostrSubscribe } from './types.ts';

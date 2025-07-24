@@ -1,8 +1,8 @@
-import { JsonValue } from 'treelike/src';
-import { publicState } from 'treelike-nostr/src';
-import { NostrPublish, NostrSubscribe } from 'treelike-nostr/src/types';
 import { useMemo } from 'react';
 
+import { JsonValue } from '../../treelike/src';
+import { publicState } from '../../treelike-nostr/src';
+import { NostrPublish, NostrSubscribe } from '../../treelike-nostr/src/types';
 import { useGroupNodeState, useNodeState } from './useNodeState.ts';
 
 /**

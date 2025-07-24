@@ -1,7 +1,7 @@
-import { Hex, PublicKey, publicState } from 'treelike-nostr';
-import { NostrEvent, NostrPublish, NostrSubscribe } from 'treelike-nostr/dist/types';
 import { useEffect, useMemo, useState } from 'react';
 
+import { Hex, PublicKey, publicState } from '../../treelike-nostr/src';
+import { NostrEvent, NostrPublish, NostrSubscribe } from '../../treelike-nostr/src/types';
 import { useLocalState } from './useLocalState';
 
 /**

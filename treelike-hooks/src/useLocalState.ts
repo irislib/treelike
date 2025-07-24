@@ -1,5 +1,4 @@
-import { JsonValue, localState, TypeGuard } from 'treelike/src';
-
+import { JsonValue, localState, TypeGuard } from '../../treelike/src';
 import { useNodeState } from './useNodeState.ts';
 
 export function useLocalState<T>(

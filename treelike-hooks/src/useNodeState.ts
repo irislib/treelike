@@ -1,5 +1,6 @@
-import { JsonValue, Node, TypeGuard, Unsubscribe } from 'treelike/src';
 import { useCallback, useEffect, useState } from 'react';
+
+import { JsonValue, Node, TypeGuard, Unsubscribe } from '../../treelike/src';
 
 function useNodeStateBase<T = JsonValue>(
   node: Node,

@@ -4,10 +4,10 @@ import { bytesToHex } from '@noble/hashes/utils';
 import NDK, { NDKEvent, NDKPrivateKeySigner } from '@nostr-dev-kit/ndk';
 import NDKCacheAdapterDexie from '@nostr-dev-kit/ndk-cache-dexie';
 import { waitFor } from '@testing-library/dom';
-import { Callback, Unsubscribe } from 'treelike';
 import { generateSecretKey, getPublicKey } from 'nostr-tools';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
+import { Callback, Unsubscribe } from '../../treelike/src';
 import { NDKAdapter, PublicKey } from '.';
 import { NostrEvent, NostrFilter } from './types';
 

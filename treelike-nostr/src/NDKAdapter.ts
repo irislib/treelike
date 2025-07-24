@@ -1,7 +1,7 @@
 import debug from 'debug';
-import { Adapter, Callback, NodeValue, Unsubscribe } from 'treelike';
 import { nip19 } from 'nostr-tools';
 
+import { Adapter, Callback, NodeValue, Unsubscribe } from '../../treelike/src';
 import { PublicKey } from './Hex/PublicKey';
 import { NostrEvent, NostrPublish, NostrSubscribe } from './types';
 
