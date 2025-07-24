@@ -1,8 +1,8 @@
 {
   "name": "treelike-root",
   "private": true,
-  "homepage": "https://nostr-double-ratchet.iris.to/",
-  "documentation": "https://nostr-double-ratchet.iris.to/",
+  "homepage": "https://github.com/irislib/treelike",
+  "documentation": "https://treelike.iris.to",
   "workspaces": [
     "treelike",
     "treelike-nostr",
