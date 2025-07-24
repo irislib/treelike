@@ -1,4 +1,4 @@
-import { Adapters, Node } from 'irisdb';
+import { Adapters, Node } from 'treelike';
 
 import { PublicKey } from './Hex/PublicKey.ts';
 import NDKAdapter from './NDKAdapter';

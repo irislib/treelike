@@ -1,5 +1,5 @@
-import { Hex, PublicKey, publicState } from 'irisdb-nostr';
-import { NostrEvent, NostrPublish, NostrSubscribe } from 'irisdb-nostr/dist/types';
+import { Hex, PublicKey, publicState } from 'treelike-nostr';
+import { NostrEvent, NostrPublish, NostrSubscribe } from 'treelike-nostr/dist/types';
 import { useEffect, useMemo, useState } from 'react';
 
 import { useLocalState } from './useLocalState';

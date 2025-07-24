@@ -1,6 +1,6 @@
 import { BroadcastChannelAdapter } from './adapters/BroadcastChannelAdapter.ts';
 import { LocalStorageMemoryAdapter } from './adapters/LocalStorageMemoryAdapter.ts';
-import { Node } from './Node';
+import { Node } from './Node.ts';
 
 const NAME = 'localState';
 

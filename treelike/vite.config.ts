@@ -4,9 +4,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: 'src/index.ts',
-      name: 'irisdb',
+      name: 'treelike',
       // The file name for the generated bundle (entry point of your library)
-      fileName: (format) => `irisdb.${format}.js`,
+      fileName: (format) => `treelike.${format}.js`,
     },
     rollupOptions: {
       // Externalize dependencies so they're not bundled into your library

@@ -1,7 +1,7 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 import { MemoryAdapter } from './adapters/MemoryAdapter.ts';
-import { DIRECTORY_VALUE, isDirectory, Node } from './Node';
+import { DIRECTORY_VALUE, isDirectory, Node } from './Node.ts';
 import { Callback, JsonValue, Unsubscribe } from './types.ts';
 
 describe('Node', () => {

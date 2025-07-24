@@ -11,7 +11,7 @@ export class IndexedDBAdapter implements Adapter {
   private callbacks = new Map<string, Set<Callback>>();
   private idbFactory: IDBFactory;
 
-  constructor(dbName = 'irisdb', storeName = 'keyval') {
+  constructor(dbName = 'treelike', storeName = 'keyval') {
     this.dbName = dbName;
     this.storeName = storeName;
     // Use the appropriate IDBFactory depending on context

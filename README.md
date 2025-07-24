@@ -1,6 +1,6 @@
-IrisDB
+treelike
 ======
-IrisDB is a simple treelike data structure with subscribable nodes. It can be easily synced over different transports.
+treelike is a simple treelike data structure with subscribable nodes. It can be easily synced over different transports.
  
 For example, it provides a very simple way for local state management in React applications. The state can be optionally persisted in localStorage or synced between browser tabs.
 
@@ -10,33 +10,33 @@ See it in action on [docs.iris.to](https://docs.iris.to/).
 
 It's inspired by [GunDB](https://github.com/amark/gun) and has a similar API.
 
-[Documentation](https://irisdb.iris.to/)
+[Documentation](https://treelike.iris.to/)
 
 ## Installation
 
-Just IrisDB, e.g. local use: 
+Just treelike, e.g. local use: 
 ```
-npm install irisdb
+npm install treelike
 ```
 
 With Nostr: 
 ```
-npm install @nostr-dev-kit/ndk @nostr-dev-kit/ndk-cache-dexie nostr-tools irisdb irisdb-nostr
+npm install @nostr-dev-kit/ndk @nostr-dev-kit/ndk-cache-dexie nostr-tools treelike treelike-nostr
 ```
 
 React hooks:
 ```
-npm install @nostr-dev-kit/ndk @nostr-dev-kit/ndk-cache-dexie nostr-tools irisdb irisdb-nostr irisdb-hooks
+npm install @nostr-dev-kit/ndk @nostr-dev-kit/ndk-cache-dexie nostr-tools treelike treelike-nostr treelike-hooks
 ```
 
-(non-irisdb libs are peer dependencies)
+(non-treelike libs are peer dependencies)
 
 ## Examples
 
 ### Persist React app local state in localStorage and sync between tabs
 
 ```tsx
-import { useLocalState } from 'irisdb-hooks';
+import { useLocalState } from 'treelike-hooks';
 
 function LoginDialog() {
   const [myPrivateKey, setMyPrivateKey] = useLocalState('user/privateKey', '');
@@ -68,10 +68,10 @@ function LoginDialog() {
 
 ### Collaborative document editing
 
-Uses the `irisdb-nostr` adapter to sync over [Nostr](https://nostr.com).
+Uses the `treelike-nostr` adapter to sync over [Nostr](https://nostr.com).
 
 ```tsx
-import { usePublicState, useAuthors } from 'irisdb-hooks';
+import { usePublicState, useAuthors } from 'treelike-hooks';
 
 function DocumentTitle() {
   // List of users you follow on Nostr.

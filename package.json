@@ -1,15 +1,15 @@
 {
-  "name": "iris",
+  "name": "treelike-root",
   "private": true,
   "homepage": "https://nostr-double-ratchet.iris.to/",
   "documentation": "https://nostr-double-ratchet.iris.to/",
   "workspaces": [
-    "irisdb",
-    "irisdb-nostr",
-    "irisdb-hooks"
+    "treelike",
+    "treelike-nostr",
+    "treelike-hooks"
   ],
   "scripts": {
-    "build": "npm run build --workspace=irisdb && npm run build --workspace=irisdb-nostr && npm run build --workspace=irisdb-hooks",
+    "build": "npm run build --workspace=treelike && npm run build --workspace=treelike-nostr && npm run build --workspace=treelike-hooks",
     "docs": "typedoc",
     "lint": "eslint --ext .ts,.tsx --fix ."
   },

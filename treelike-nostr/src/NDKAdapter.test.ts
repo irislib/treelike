@@ -4,7 +4,7 @@ import { bytesToHex } from '@noble/hashes/utils';
 import NDK, { NDKEvent, NDKPrivateKeySigner } from '@nostr-dev-kit/ndk';
 import NDKCacheAdapterDexie from '@nostr-dev-kit/ndk-cache-dexie';
 import { waitFor } from '@testing-library/dom';
-import { Callback, Unsubscribe } from 'irisdb';
+import { Callback, Unsubscribe } from 'treelike';
 import { generateSecretKey, getPublicKey } from 'nostr-tools';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
@@ -16,7 +16,7 @@ describe('NDKAdapter', () => {
   let i = 0;
 
   beforeEach(() => {
-    const dbName = `irisdb-nostr-${i++}`;
+    const dbName = `treelike-nostr-${i++}`;
     const dexieAdapter = new NDKCacheAdapterDexie({ dbName });
     const ndk = new NDK({
       explicitRelayUrls: [],

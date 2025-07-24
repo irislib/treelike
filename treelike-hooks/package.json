@@ -1,0 +1,33 @@
+{
+  "name": "treelike-hooks",
+  "version": "1.0.14",
+  "type": "module",
+  "description": "React hooks for treelike",
+  "main": "dist/treelike-hooks.umd.js",
+  "module": "dist/treelike-hooks.es.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "vitest",
+    "build": "vite build && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irislib/treelike.git"
+  },
+  "author": "Martti Malmi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/irislib/treelike/issues"
+  },
+  "homepage": "https://github.com/irislib/treelike",
+  "documentation": "https://treelike.iris.to",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "peerDependencies": {
+    "treelike": "*",
+    "react": "*",
+    "treelike-nostr": "*"
+  }
+}

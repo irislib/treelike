@@ -4,22 +4,22 @@ export default defineConfig({
   build: {
     lib: {
       entry: 'src/index.ts',
-      name: 'irisdb',
+      name: 'treelike-hooks',
       // The file name for the generated bundle (entry point of your library)
-      fileName: (format) => `irisdb-nostr.${format}.js`,
+      fileName: (format) => `treelike-hooks.${format}.js`,
     },
     rollupOptions: {
       // Externalize dependencies so they're not bundled into your library
-      external: ['irisdb'],
+      external: ['react', 'treelike', 'treelike-nostr'],
       output: {
-        // Provide globals here if necessary
-        globals: {},
+        globals: {
+          react: 'React',
+        },
       },
     },
     outDir: 'dist',
   },
   test: {
     environment: 'jsdom',
-    setupFiles: ['./tests/setupTests.ts'],
   },
 });

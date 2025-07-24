@@ -1,10 +1,10 @@
 {
-  "name": "irisdb-nostr",
+  "name": "treelike-nostr",
   "version": "1.0.23",
   "type": "module",
-  "description": "Nostr adapter for IrisDB",
-  "main": "dist/irisdb-nostr.umd.js",
-  "module": "dist/irisdb-nostr.es.js",
+  "description": "Nostr adapter for treelike",
+  "main": "dist/treelike-nostr.umd.js",
+  "module": "dist/treelike-nostr.es.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "vitest",
@@ -12,22 +12,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/irislib/irisdb.git"
+    "url": "git+https://github.com/irislib/treelike.git"
   },
   "author": "Martti Malmi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/irislib/irisdb/issues"
+    "url": "https://github.com/irislib/treelike/issues"
   },
-  "homepage": "https://github.com/irislib/irisdb",
-  "documentation": "https://irisdb.iris.to",
+  "homepage": "https://github.com/irislib/treelike",
+  "documentation": "https://treelike.iris.to",
   "dependencies": {
     "@noble/hashes": "^1.5.0",
     "debug": "^4.3.7",
     "nostr-tools": "^2.7.2"
   },
   "peerDependencies": {
-    "irisdb": "*"
+    "treelike": "*"
   },
   "files": [
     "src",

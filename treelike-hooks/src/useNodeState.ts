@@ -1,4 +1,4 @@
-import { JsonValue, Node, TypeGuard, Unsubscribe } from 'irisdb';
+import { JsonValue, Node, TypeGuard, Unsubscribe } from 'treelike/src';
 import { useCallback, useEffect, useState } from 'react';
 
 function useNodeStateBase<T = JsonValue>(

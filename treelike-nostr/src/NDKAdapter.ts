@@ -1,5 +1,5 @@
 import debug from 'debug';
-import { Adapter, Callback, NodeValue, Unsubscribe } from 'irisdb';
+import { Adapter, Callback, NodeValue, Unsubscribe } from 'treelike';
 import { nip19 } from 'nostr-tools';
 
 import { PublicKey } from './Hex/PublicKey';

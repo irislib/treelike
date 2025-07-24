@@ -1,6 +1,6 @@
-import { JsonValue } from 'irisdb';
-import { publicState } from 'irisdb-nostr';
-import { NostrPublish, NostrSubscribe } from 'irisdb-nostr/dist/types';
+import { JsonValue } from 'treelike/src';
+import { publicState } from 'treelike-nostr/src';
+import { NostrPublish, NostrSubscribe } from 'treelike-nostr/src/types';
 import { useMemo } from 'react';
 
 import { useGroupNodeState, useNodeState } from './useNodeState.ts';
@@ -8,7 +8,7 @@ import { useGroupNodeState, useNodeState } from './useNodeState.ts';
 /**
  * React hook to get a public state node with the given authors. A bit similar to React's useState.
  *
- * irisdb-nostr peer dependency is required for this hook to work.
+ * treelike-nostr peer dependency is required for this hook to work.
  *
  * @param authors
  * @param path
